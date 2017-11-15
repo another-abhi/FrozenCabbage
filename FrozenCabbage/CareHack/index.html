@@ -1,0 +1,94 @@
+<html>
+<head>
+	<title>CareHack</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="main.js"></script>
+	<link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+<nav class="main-nav">
+	<ul>
+		<li><a class="signin" href="#0">Sign in</a></li>
+		<li><a class="signup" href="#0">Sign up</a></li>
+	</ul>
+</nav>
+
+<div class="user-modal">
+		<div class="user-modal-container">
+			<ul class="switcher">
+				<li><a href="#0">Sign in</a></li>
+				<li><a href="#0">New account</a></li>
+			</ul>
+
+			<div id="login">
+				<form class="form" method="POST" action="/PatientPortal/login/">
+					<p class="fieldset">
+						<label class="image-replace email" for="signin-email">E-mail</label>
+						<input class="full-width has-padding has-border" id="signin-email" type="email" placeholder="E-mail">
+					</p>
+
+					<p class="fieldset">
+						<label class="image-replace password" for="signin-password">Password</label>
+						<input class="full-width has-padding has-border" id="signin-password" type="password"  placeholder="Password">
+						<a href="#0" class="hide-password">Show</a>
+					</p>
+
+					<p class="fieldset">
+						<input type="checkbox" id="remember-me" checked>
+						<label for="remember-me">Remember me</label>
+					</p>
+
+					<p class="fieldset">
+						<input class="full-width" type="submit" value="Login" id='login_submit'>
+					</p>
+				</form>
+				
+				<p class="form-bottom-message"><a href="#0">Forgot your password?</a></p>
+				<!-- <a href="#0" class="close-form">Close</a> -->
+			</div>
+
+			<div id="signup">
+				<form class="form" method="POST" action="/PatientPortal/signup/">
+					<p class="fieldset">
+						<label class="image-replace email" for="signup-email">E-mail</label>
+						<input class="full-width has-padding has-border" id="signup-email" type="email" placeholder="E-mail">
+					</p>
+
+					<p class="fieldset">
+						<label class="image-replace password" for="signup-password">Password</label>
+						<input class="full-width has-padding has-border" id="signup-password" type="password"  placeholder="Password">
+						<a href="#0" class="hide-password">Show</a>
+					</p>
+					<p class="fieldset">
+						<label class="image-replace mob" for="signup-mob">Mobile </label>
+						<input class="full-width has-padding has-border" id="signup-mobile" type="number" placeholder="Mobile No">
+					</p>
+					<p class="fieldset">
+						<input class="full-width has-padding" type="submit" value="Create account" id='signup_submit'>
+					</p>
+				</form>
+
+				<!-- <a href="#0" class="cd-close-form">Close</a> -->
+			</div>
+
+			<div id="reset-password">
+				<p class="form-message">Lost your password? Please enter your email address.</br> You will receive a link to create a new password.</p>
+
+				<form class="form">
+					<p class="fieldset">
+						<label class="image-replace email" for="reset-email">E-mail</label>
+						<input class="full-width has-padding has-border" id="reset-email" type="email" placeholder="E-mail">
+					</p>
+
+					<p class="fieldset">
+						<input class="full-width has-padding" type="submit" value="Reset password">
+					</p>
+				</form>
+
+				<p class="form-bottom-message"><a href="#0">Back to log-in</a></p>
+			</div>
+			<a href="#0" class="close-form">Close</a>
+		</div>
+	</div>
+	</body>
+	</html>
