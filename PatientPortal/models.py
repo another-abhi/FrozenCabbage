@@ -5,10 +5,10 @@ from django.db import models
 
 # Create your models here.
 class patient(models.Model):
-        def __unicode(self)
+        def __unicode__(self):
             return unicode(self.user)
-        user=models.OnetToOnneField(User,on_delete=models.CASCADE)
-        pid=models.IntegerField(AutoField)
+        user=models.OneToOneField(User,on_delete=models.CASCADE)
+        pid=models.IntegerField()
         fname=models.CharField(max_length=20)
         lname=models.CharField(max_length=20)
         phno=models.IntegerField(max_length=10)

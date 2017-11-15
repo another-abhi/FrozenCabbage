@@ -11,7 +11,8 @@ from django.views.decorators.csrf import csrf_exempt, csrf_protect
 from django.contrib.auth import logout
 
 def index(request):
-    return HttpResponse("Patient Login")
+    #return HttpResponse("Patient Login")
+	return render(request,'PatientPortal/index.html',{})
 # Create your views here.
 
 def logina(request):
