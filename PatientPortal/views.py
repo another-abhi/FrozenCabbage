@@ -57,4 +57,5 @@ def register(request):
 				  phno=phno,
 				  age=age)
 		sendOTP()
-		return render(request,'PatientPortal/otp.html',{})
+		#
+		#return render(request,'PatientPortal/otp.html',{})
